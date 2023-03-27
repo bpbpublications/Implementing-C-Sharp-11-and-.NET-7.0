@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLibraryImprovements", "CoreLibraryImprovements\CoreLibraryImprovements.csproj", "{A8821FF7-E869-4708-8EBE-8846F4B7D452}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObservabilityImprovements", "ObservabilityImprovements\ObservabilityImprovements.csproj", "{DC9641BA-E7FB-4111-8902-E79B793FBA86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8821FF7-E869-4708-8EBE-8846F4B7D452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8821FF7-E869-4708-8EBE-8846F4B7D452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8821FF7-E869-4708-8EBE-8846F4B7D452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8821FF7-E869-4708-8EBE-8846F4B7D452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9641BA-E7FB-4111-8902-E79B793FBA86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9641BA-E7FB-4111-8902-E79B793FBA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9641BA-E7FB-4111-8902-E79B793FBA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9641BA-E7FB-4111-8902-E79B793FBA86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
