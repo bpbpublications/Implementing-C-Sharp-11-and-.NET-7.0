@@ -1,0 +1,30 @@
+﻿@page "/"
+
+<custom-counter></custom-counter>
+
+@code {
+
+    public override async Task SetParametersAsync(ParameterView parameters)
+    {
+        Console.WriteLine($"Started setting parameters at {DateTime.Now}.");
+        await base.SetParametersAsync(parameters);
+    }
+
+    protected override void OnInitialized()
+    {
+        Console.WriteLine($"Initialized at {DateTime.Now}.");
+        base.OnInitialized();
+    }
+
+    protected override void OnParametersSet()
+    {
+        Console.WriteLine($"Parameters set at {DateTime.Now}.");
+        base.OnParametersSet();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        Console.WriteLine($"Completed rendering at {DateTime.Now}.");
+        base.OnAfterRender(firstRender);
+    }
+}

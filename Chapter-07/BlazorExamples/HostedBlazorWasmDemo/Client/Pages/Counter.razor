@@ -1,0 +1,32 @@
+﻿@page "/counter"
+@using HostedBlazorWasmDemo.Client.Models;
+@inject NavigationManager NavigationManager
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p>History entry state: @NavigationManager.HistoryEntryState</p>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<EditForm Model="@counterModel" >
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <label for="incrementBy">Increment by:</label>
+    <InputNumber id="incrementBy" @bind-Value="counterModel.IncrementBy" />
+</EditForm>
+
+@code {
+
+    private CounterModel counterModel = new();
+
+    private int currentCount = 0;
+
+    private async Task IncrementCount()
+    {
+        currentCount += counterModel.IncrementBy;
+    }
+}

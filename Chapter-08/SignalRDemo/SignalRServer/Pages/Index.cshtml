@@ -1,0 +1,83 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row" style="padding-top: 50px;">
+    <div class="col-md-4">
+        <div class="control-group">
+            <div>
+                <label for="broadcast">Message</label>
+                <input type="text" id="broadcast" name="broadcast" />
+            </div>
+            <button id="btn-broadcast">Broadcast</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="others">Message</label>
+                <input type="text" id="others" name="others" />
+            </div>
+            <button id="btn-others">Send to Others</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="self">Message</label>
+                <input type="text" id="self" name="self" />
+            </div>
+            <button id="btn-self">Send to Self</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="individual">Message</label>
+                <input type="text" id="individual" name="individual" />
+            </div>
+            <div>
+                <label for="connection-id">User connection id:</label>
+                <input type="text" id="connection-id" name="connection-id" />
+            </div>
+            <button id="btn-individual">Send to Specific User</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="group">Message</label>
+                <input type="text" id="group" name="group" />
+            </div>
+            <div>
+                <label for="group1">Group Name</label>
+                <input type="text" id="group1" name="group1" />
+            </div>
+            <button id="btn-group">Send to Group</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="others-in-group">Message</label>
+                <input type="text" id="others-in-group" name="others-in-group" />
+            </div>
+            <div>
+                <label for="group1">Group Name</label>
+                <input type="text" id="group2" name="group2" />
+            </div>
+            <button id="btn-others-in-group">Send to Others in Group</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="broadcast">Messages</label>
+                <input type="text" id="broadcast-stream" name="broadcast-stream" />
+            </div>
+            <button id="btn-broadcast-stream">Broadcast Stream</button>
+        </div>
+        <div class="control-group">
+            <div>
+                <label for="number-of-jobs">Number of Jobs</label>
+                <input type="text" id="number-of-jobs" name="number-of-jobs" />
+            </div>
+            <button id="btn-trigger-stream">Trigger Server Stream</button>
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <p>SignalR Messages:</p>
+        <pre id="signalr-message-panel"></pre>
+    </div>
+</div>
