@@ -1,2 +1,2 @@
-# A complete guide to implementing C Sharp 11 and .NET 7
- A complete guide to implementing C# 11 and .NET 7, by BPB Publications
+# Implementing C# 11 and NET 7.0
+ Implementing C# 11 and NET 7.0, by BPB Publications
